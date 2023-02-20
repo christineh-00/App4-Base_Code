@@ -31,8 +31,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--changed the blah blah blah to what the goal and known symptoms are -->
 	
 <head> 
-	<title>Constipation or Obstipation</title> 
-	<!--changed the title from Hello World to Constipation or Obstipation-->
+	<title>Constipation or Obstipation?</title> 
+	<!--changed the title from Hello World to Constipation or Obstipation?-->
 ]	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
@@ -114,8 +114,136 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Constipation or Obstipation?</h1>
+	<!--changed the title from Cold or Allergy? to Constipation or Obstipation?-->
+	
+</div>
+	
+<div id="content" class="w3-container">
+	<p>Are you feeling like you might have a obstipation but wonder if it is constipation. Answer a few short questions to find out!</p>
+	<!--replaced the word cold and allergy with obstipation and constipation-->
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Are you having infrequent or hard stools?</p>
+	<!--changed Are your eyes watery or itchy? to Are you having infrequent or hard stools?-->
+	<!--the two code below will  display two buttons on the survery that will show either a "yes" or "no" for the patient to choose from*/-->
+		<a href="#two"  onclick="constipationAdd();" class="w3-btn w3-black"> Yes</a>
+		<!--changed the allergyAdd to constipationAdd-->
+         	<a href="#two"  onclick="obstipationAdd();" class="w3-btn w3-black"> No</a>
+		<!--changed the coldAdd to obstipationAdd-->
+    	</div>
+</div>
+
+<div class="page" id="two">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<!--changed "Content of page 2 goes here" to "Do you have a fever?"-->
+		<p>Do you have a fever?</p>
+			<!--the two code below will  display two buttons on the survery that will show either a "yes" or "no" for the patient to choose from-->
+			<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+			<!--changed "#two" to "#three"-->
+         		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> No</a> 
+			<!--changed "#two" to "#three"-->
+	</div>
+</div>	
+
+<!--copied contents from the last section to create a new page-->
+	
+<div class="page" id="three">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1> 
+		<!--changed "Question 2" to "Question 3"-->
+	</div>
+	
+	<div id="content" class="w3-container">
+		 <!--changed "Do you have a fever?" to "Do you have a sore throat?"-->
+		<p>Do you have a sore throat?</p>
+			<!--the two code below will  display two buttons on the survery that will show either a "yes" or "no" for the patient to choose from-->
+			<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+			<!--changed "#three" to "#four"-->
+         		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> No</a> 
+			<!--changed "#three" to "#four"-->
+	</div>
+</div>	
+	
+<!--copied contents from the last section to create a new page-->
+	
+<div class="page" id="four">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1> 
+		<!--changed "Question 3" to "Question 4"-->
+	</div>
+	
+	<div id="content" class="w3-container">
+		 <!--changed "Do you have a sore throat?" to "Are your symptoms seasonal or chronic?"-->
+		<p>Are your symptoms seasonal or chronic?</p>
+			<!--the two code below will  display two buttons on the survery that will show either a "seasonal" or "chronic" for the patient to choose from-->
+			<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Seasonal</a> 
+			<!--changed "#four" to "#five"-->
+         		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black"> Chronic</a> 
+			<!--changed "#four" to "#five"-->
+	</div>
+</div>	
+	
+<!--copied contents from the last section to create a new page-->
+	
+<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1> 
+		<!--changed "Question 4" to "Question 5"-->
+	</div>
+	
+	<div id="content" class="w3-container">
+		 <!--changed "Are your symptoms seasonal or chronic?" to "Is your mucus thin and watery?"-->
+		<p>Is your mucus thin and watery?</p>
+			<!--the two code below will  display two buttons on the survery that will show either a "yes" or "no" for the patient to choose from-->
+			<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> 
+			<!--changed "#five" to "#six"-->
+         		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> No</a> 
+			<!--changed "#five" to "#six"-->
+	</div>
+</div>	
+	
+<!--copied contents from the last section to create a new page-->
+	
+<div class="page" id="seven">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1> 
+		<!--changed "Question 6" to "Results"-->
+	</div>
+	
+	<p id="lastPage"></p>
+	<!--added in a placeholder for the command-->
+	
+	<div id="content" class="w3-container">
+		<p>Please click on the Results button to get your results</p>
+		<!--changed "Is your mucus thick yellow or green?" to "Please click on the Results button to get your results"-->
+		<a href="#seven"  onclick="computeResults();" class="w3-btn w3-black">Results</a> 
+		<!--created a button to display the results-->
+		
+	</div>
+</div>
+	
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+	</footer>
+</div> 
+	
 	
 </body>
 </html>
