@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-The goal of this code is for the user to determine if they are experiencing constipation or obstipation through a series of questions.
+The goal of this code is for the user to determine if they are experiencing sprain or strain through a series of questions.
  
 Known Issues:
 The symptoms of the two are similar, this website will display the final results at the end after all questions have been answered.
@@ -31,8 +31,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--changed the blah blah blah to what the goal and known symptoms are -->
 	
 <head> 
-	<title>Constipation or Obstipation?</title> 
-	<!--changed the title from "Hello World" to "Constipation or Obstipation?"-->
+	<title>Sprain or Strain?</title> 
+	<!--changed the title from "Hello World" to "Sprain or Strain?"-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
@@ -41,47 +41,47 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	var constipation_count = 0;
-	/* changed the "allergy_count" to" constipation_count" */
-        var obstipation_count = 0;
-	/* changed the "cold_count" to "obstipation_count" */
-        function constipationAdd(){
-		/* changed the "allergyAdd" to "constipationAdd" */
-            constipation_count = constipation_count + 1;
+	var sprain_count = 0;
+	/* changed the "allergy_count" to" sprain_count" */
+        var strain_count = 0;
+	/* changed the "cold_count" to "strain_count" */
+        function sprainAdd(){
+		/* changed the "allergyAdd" to "sprainAdd" */
+            sprain_count = sprain_count + 1;
 		/* function to keep track of the allergy answers on survey */
-		/* changed both the "allergy_count" to "constipation_count" */
+		/* changed both the "allergy_count" to "sprain_count" */
 
         }
 
 	
-        function obstipationAdd(){
-		/* changed the "coldAdd" to "obstipationAdd" */
-            obstipation_count = obstipation_count + 1;
+        function strainAdd(){
+		/* changed the "coldAdd" to "strainAdd" */
+            strain_count = strain_count + 1;
 		/* function to keep track of the cold answers on survey */
-		/* changed both the "cold_count" to "obstipation_count" */
+		/* changed both the "cold_count" to "strain_count" */
 		
         }
 
 	
 	function computeResults(){ 
-		var constipationPercent = (constipation_count/4)*100;
+		var sprainPercent = (sprain_count/4)*100;
 		/* created a formula to calulate for the constipation precentage */
-		/* changed "allergyPercent" to "constipationPercent" */
-		/* changed "allergy_count" to "constipation_count" */
+		/* changed "allergyPercent" to "sprainPercent" */
+		/* changed "allergy_count" to "sprain_count" */
 		/* changed the total from 6 to 4 */
-		var obstipationPercent = (obstipation_count/4)*100;
+		var strainPercent = (strain_count/4)*100;
 		/* created a formula to calulate for the allergy precentage */
-		/* changed "coldPercent" to "obstipationPercent" */
-		/* changed "cold_count" to "obstipation_count" */
+		/* changed "coldPercent" to "strainPercent" */
+		/* changed "cold_count" to "strain_count" */
 		/* changed the total from 6 to 4 */
 		var resultText = document.getElementById("lastPage");
 		/* added in function to calculate and display results */
 		/* cretaed a function for the results to show on the last page */
-		resultText.innerHTML =  "Probability it is constipation = " + constipationPercent + "%" + "<br> Probability it is a obstipation = " + obstipationPercent + "%"; 
-		/* changed "Probability it is allergies" to "Probability it is constipation" */
-		/* changed "Probability it is cold" to "Probability it is obstipation" */
-		/* changed "allergyPercent" to "constipationPercent" */
-		/* changed "coldPercent" to "obstipationPercent" */
+		resultText.innerHTML =  "Probability it is sprain  = " + sprainPercent + "%" + "<br> Probability it is a strain = " + strainPercent + "%"; 
+		/* changed "Probability it is allergies" to "Probability it is sprain" */
+		/* changed "Probability it is cold" to "Probability it is strain" */
+		/* changed "allergyPercent" to "sprainPercent" */
+		/* changed "coldPercent" to "strainPercent" */
 	} 
 	
 <!--pasted Java Script from app 3 and made a few minor adjustments to fit app 4-->
