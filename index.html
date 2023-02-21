@@ -194,22 +194,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		 <!--changed "Do you have a sore throat?" to "Are your symptoms seasonal or chronic?"-->
-		<p>Are your symptoms seasonal or chronic?</p>
-			<!--the two code below will display two buttons on the survery that will show either a "seasonal" or "chronic" for the patient to choose from-->
-			<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Seasonal</a> 
+		<p>Was there a "popping” sensation at the time of the injury?</p>
+		<!--changed "Do you have a sore throat?" to "Was there a "popping” sensation at the time of the injury?"-->
+		<!--the two code below will display two buttons on the survery that will show either a "yes" or "no" for the patient to choose from-->
+			<a href="#five"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a> 
 			<!--changed "#four" to "#five"-->
-         		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black"> Chronic</a> 
+			<!--changed the "allergyAdd" to "sprainAdd"-->
+         		<a href="#five"  onclick="strainAdd();" class="w3-btn w3-black"> No</a> 
 			<!--changed "#four" to "#five"-->
+			<!--changed the "coldAdd" to "strainAdd"-->
 	</div>
 </div>	
 	
 <!--copied contents from the last section to create a new page-->
 	
-<div class="page" id="seven">
+<div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1> 
 		<!--changed "Question 6" to "Results"-->
+		<!--changed id="seven" to id="five"-->
 	</div>
 	
 	<p id="lastPage"></p>
@@ -218,8 +221,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Please click on the Results button to get your results</p>
 		<!--changed "Is your mucus thick yellow or green?" to "Please click on the Results button to get your results"-->
-		<a href="#seven"  onclick="computeResults();" class="w3-btn w3-black">Results</a> 
+		<a href="#five"  onclick="computeResults();" class="w3-btn w3-black">Results</a> 
 		<!--created a button to display the results-->
+		<!--changed href="seven" to href="five"-->
 		
 	</div>
 </div>
